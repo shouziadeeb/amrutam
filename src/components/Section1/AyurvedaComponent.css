@@ -1,0 +1,70 @@
+.container2 {
+  width: 100vw;
+  height: calc(849 * var(--curr-device-width) / var(--ideal-viewport-width));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.container2 h1 {
+  font-size: calc(48 * var(--curr-device-width) / var(--ideal-viewport-width));
+  color: #3a643b;
+}
+.container2 .para {
+  width: calc(671 * var(--curr-device-width) / var(--ideal-viewport-width));
+  height: calc(84 * var(--curr-device-width) / var(--ideal-viewport-width));
+  margin-top: -1vw;
+  font-size: calc(20 * var(--curr-device-width) / var(--ideal-viewport-width));
+  text-align: center;
+  color: #666666;
+}
+.feature_text_image {
+  width: 100%;
+  height: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1vw;
+}
+.img_text {
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 10vw;
+  position: relative;
+}
+.img_text img {
+  width: calc(100 * var(--curr-device-width) / var(--ideal-viewport-width));
+}
+.each_item_from_array_left {
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  width: calc(349 * var(--curr-device-width) / var(--ideal-viewport-width));
+  height: calc(100 * var(--curr-device-width) / var(--ideal-viewport-width));
+  gap: 2vw;
+}
+.each_item_from_array_right {
+  display: flex;
+  align-items: center;
+  width: calc(349 * var(--curr-device-width) / var(--ideal-viewport-width));
+  height: calc(100 * var(--curr-device-width) / var(--ideal-viewport-width));
+  gap: 2vw;
+}
+
+.each_item_from_array_right h3,
+.each_item_from_array_left h3 {
+  font-size: calc(20 * var(--curr-device-width) / var(--ideal-viewport-width));
+}
+.each_item_from_array_right p,
+.each_item_from_array_left p {
+  font-size: calc(16 * var(--curr-device-width) / var(--ideal-viewport-width));
+}
+.center_img {
+  width: calc(502 * var(--curr-device-width) / var(--ideal-viewport-width));
+  height: calc(522 * var (--curr-device-width) / var(--ideal-viewport-width));
+}
+.center_img img {
+  width: 100%;
+}

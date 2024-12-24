@@ -1,0 +1,208 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+.container5 {
+  width: 100vw;
+  height: calc(710 * var(--curr-device-width) / var(--ideal-viewport-width));
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #fff7e2;
+  position: relative;
+}
+.heading h1 {
+  font-family: "DinProBold", bold;
+  font-size: calc(48 * var(--curr-device-width) / var(--ideal-viewport-width));
+  color: #3a643b;
+  text-align: center;
+  text-decoration: underline
+    calc(8 * var(--curr-device-width) / var(--ideal-viewport-width)) #3a643b71;
+}
+.review_card_box {
+  width: calc(1228 * var(--curr-device-width) / var(--ideal-viewport-width));
+  height: calc(371 * var(--curr-device-width) / var(--ideal-viewport-width));
+  display: flex;
+  justify-content: space-between;
+}
+.story_card {
+  /* width: calc(388 * var(--curr-device-width) / var(--ideal-viewport-width)); */
+  /* height: calc(371 * var(--curr-device-width) / var(--ideal-viewport-width)); */
+  background: #f7f7f7;
+  width: 25vw;
+  height: 25vw;
+  border-radius: calc(
+    20 * var(--curr-device-width) / var(--ideal-viewport-width)
+  );
+  padding: calc(20 * var(--curr-device-width) / var(--ideal-viewport-width));
+  display: flex;
+  flex-direction: column;
+  gap: calc(10 * var(--curr-device-width) / var(--ideal-viewport-width));
+  /* justify-content: space-evenly; */
+  position: relative;
+  padding-top: 2.8vw;
+  box-shadow: 0 0 20px #c4c4c4;
+}
+.consulted_by {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  font-weight: bold;
+  font-family: "Nunito", serif;
+  border-radius: calc(
+      20 * var(--curr-device-width) / var(--ideal-viewport-width)
+    )
+    calc(20 * var(--curr-device-width) / var(--ideal-viewport-width)) 0 0;
+  display: flex;
+  align-items: center;
+  padding-left: 2vw;
+  font-size: calc(20 * var(--curr-device-width) / var(--ideal-viewport-width));
+  height: calc(54 * var(--curr-device-width) / var(--ideal-viewport-width));
+}
+.name_date_loct {
+  width: calc(331 * var(--curr-device-width) / var(--ideal-viewport-width));
+  height: calc(60 * var(--curr-device-width) / var(--ideal-viewport-width));
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1.8vw;
+}
+.name_date_loct span {
+  width: calc(60 * var(--curr-device-width) / var(--ideal-viewport-width));
+  height: calc(60 * var(--curr-device-width) / var(--ideal-viewport-width));
+  border-radius: 50%;
+  background-color: #515151;
+}
+.name_date_loct p {
+  font-size: calc(20 * var(--curr-device-width) / var(--ideal-viewport-width));
+}
+.span_name {
+  display: flex;
+  gap: 1vw;
+}
+.stars {
+  width: 100%;
+  font-size: calc(35 * var(--curr-device-width) / var(--ideal-viewport-width));
+  color: #eede4d;
+  letter-spacing: calc(
+    2 * var(--curr-device-width) / var(--ideal-viewport-width)
+  );
+}
+.story_card_content .review {
+  font-size: calc(22 * var(--curr-device-width) / var(--ideal-viewport-width));
+  font-weight: bold;
+  font-family: "DM Sans", serif;
+}
+.story_card_content .para {
+  font-size: calc(18 * var(--curr-device-width) / var(--ideal-viewport-width));
+  color: #555555;
+  margin-top: 1vw;
+  line-height: calc(
+    30 * var(--curr-device-width) / var(--ideal-viewport-width)
+  );
+}
+
+.container5 .swiper-button-next,
+.container5 .swiper-button-prev {
+  display: none;
+}
+.swiper-pagination {
+  position: absolute;
+  bottom: 101px; /* Adjust position */
+  text-align: center;
+  width: 100%;
+}
+@media (max-width: 600px) {
+  .container5 {
+    height: 60vh;
+  }
+  .heading h1 {
+    font-family: "DinProBold", bold;
+    font-size: calc(
+      68 * var(--curr-device-width) / var(--ideal-viewport-width)
+    );
+    color: #3a643b;
+    text-align: center;
+    text-decoration: underline
+      calc(8 * var(--curr-device-width) / var(--ideal-viewport-width)) #3a643b71;
+  }
+  .review_card_box {
+    width: calc(1228 * var(--curr-device-width) / var(--ideal-viewport-width));
+    height: calc(671 * var(--curr-device-width) / var(--ideal-viewport-width));
+    display: flex;
+    justify-content: space-between;
+  }
+  .story_card {
+    width: 70vw;
+    height: 70vw;
+    padding: 3vw;
+  }
+  .consulted_by {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    font-weight: bold;
+    font-family: "Nunito", serif;
+    border-radius: calc(
+        20 * var(--curr-device-width) / var(--ideal-viewport-width)
+      )
+      calc(20 * var(--curr-device-width) / var(--ideal-viewport-width)) 0 0;
+    display: flex;
+    align-items: center;
+    padding-left: 2vw;
+    font-size: calc(
+      60 * var(--curr-device-width) / var(--ideal-viewport-width)
+    );
+    height: calc(124 * var(--curr-device-width) / var(--ideal-viewport-width));
+  }
+  .name_date_loct {
+    width: calc(800 * var(--curr-device-width) / var(--ideal-viewport-width));
+    height: calc(250 * var(--curr-device-width) / var(--ideal-viewport-width));
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 4.8vw;
+    /* background-color: #3a643b; */
+  }
+  .name_date_loct span {
+    width: calc(160 * var(--curr-device-width) / var(--ideal-viewport-width));
+    height: calc(160 * var(--curr-device-width) / var(--ideal-viewport-width));
+    border-radius: 50%;
+    background-color: #515151;
+  }
+  .name_date_loct p {
+    font-size: calc(
+      50 * var(--curr-device-width) / var(--ideal-viewport-width)
+    );
+  }
+  .span_name {
+    display: flex;
+    gap: 2vw;
+  }
+  .stars {
+    width: 100%;
+    font-size: calc(
+      95 * var(--curr-device-width) / var(--ideal-viewport-width)
+    );
+    color: #eede4d;
+    letter-spacing: calc(
+      2 * var(--curr-device-width) / var(--ideal-viewport-width)
+    );
+  }
+  .story_card_content .review {
+    font-size: calc(
+      72 * var(--curr-device-width) / var(--ideal-viewport-width)
+    );
+    font-weight: bold;
+    font-family: "DM Sans", serif;
+  }
+  .story_card_content .para {
+    font-size: calc(
+      58 * var(--curr-device-width) / var(--ideal-viewport-width)
+    );
+    color: #555555;
+    margin-top: 1vw;
+    line-height: calc(
+      90 * var(--curr-device-width) / var(--ideal-viewport-width)
+    );
+  }
+}

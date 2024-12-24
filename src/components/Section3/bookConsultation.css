@@ -1,0 +1,79 @@
+.container3 {
+  width: 100vw;
+  height: calc(590 * var(--curr-device-width) / var(--ideal-viewport-width));
+  background-size: contain;
+  position: relative;
+}
+.container3 img {
+  height: 100%;
+  width: 100%;
+  filter: brightness(50%);
+}
+.container3_text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: calc(856 * var(--curr-device-width) / var(--ideal-viewport-width));
+  height: calc(306 * var(--curr-device-width) / var(--ideal-viewport-width));
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+.container3_text button {
+  width: calc(276 * var(--curr-device-width) / var(--ideal-viewport-width));
+  height: calc(70 * var(--curr-device-width) / var(--ideal-viewport-width));
+  background-color: #3a643b;
+  border-radius: 15px;
+  border: none;
+  font-size: calc(24 * var(--curr-device-width) / var(--ideal-viewport-width));
+  color: #ffffff;
+}
+.container3_text h1 {
+  font-size: calc(64 * var(--curr-device-width) / var(--ideal-viewport-width));
+  color: #fff7e2;
+  font-family: "DinProBold";
+  filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.4));
+  font-weight: 100;
+}
+@media (max-width: 600px) {
+  .container3 {
+    height: 70vh;
+  }
+  .container3_text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* width: calc(856 * var(--curr-device-width) / var(--ideal-viewport-width)); */
+    height: calc(806 * var(--curr-device-width) / var(--ideal-viewport-width));
+    display: flex;
+    width: 80%;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+  }
+  .container3_text button {
+    width: calc(950 * var(--curr-device-width) / var(--ideal-viewport-width));
+    height: calc(220 * var(--curr-device-width) / var(--ideal-viewport-width));
+    background-color: #3a643b; 
+    border-radius: 15px;
+    border: none;
+    font-size: calc(
+      64 * var(--curr-device-width) / var(--ideal-viewport-width)
+    );
+    color: #ffffff;
+  }
+  .container3_text h1 {
+    font-size: calc(
+      104 * var(--curr-device-width) / var(--ideal-viewport-width)
+    );
+    color: #fff7e2;
+    font-family: "DinProBold";
+    filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.4));
+    font-weight: 100;
+  }
+}

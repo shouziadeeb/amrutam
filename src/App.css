@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+:root {
+  --curr-device-width: 100vw;
+  --ideal-viewport-width: 1440;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+@font-face {
+  font-family: "DinProBold";
+  src: url("../src/assets/fonts/DINPro-Bold_13934.woff") format("woff2"),
+    url("../src/assets/fonts/dinpro-bold.woff") format("woff"),
+    url("../src/assets/fonts/dinpro-bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+body {
+  width: 100vw;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+button {
+  border-radius: 0;
+}

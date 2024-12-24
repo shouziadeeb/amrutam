@@ -1,0 +1,75 @@
+.footer {
+  width: 100vw;
+  height: calc(707 * var(--curr-device-width) / var(--ideal-viewport-width));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #3a643b2d;
+}
+.footer h3 {
+  color: #3a643b;
+  font-size: calc(18 * var(--curr-device-width) / var(--ideal-viewport-width));
+  margin-bottom: 0.5vw;
+}
+.footer p {
+  color: #474747;
+  font-size: calc(18 * var(--curr-device-width) / var(--ideal-viewport-width));
+}
+.get_in_touch {
+  display: flex;
+  flex-direction: column;
+  height: calc(260 * var(--curr-device-width) / var(--ideal-viewport-width));
+  width: calc(349 * var(--curr-device-width) / var(--ideal-viewport-width));
+  justify-content: space-between;
+}
+.icons {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+.icons span {
+  height: calc(50 * var(--curr-device-width) / var(--ideal-viewport-width));
+  width: calc(50 * var(--curr-device-width) / var(--ideal-viewport-width));
+  border-radius: 50%;
+  background-color: #3a643b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1vw;
+}
+.icons img {
+  width: calc(22 * var(--curr-device-width) / var(--ideal-viewport-width));
+  margin: 1vw;
+}
+.text_and_mail {
+  width: calc(307 * var(--curr-device-width) / var(--ideal-viewport-width));
+  height: calc(134 * var(--curr-device-width) / var(--ideal-viewport-width));
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.input_button {
+  display: flex;
+  width: calc(303 * var(--curr-device-width) / var(--ideal-viewport-width));
+  height: calc(56 * var(--curr-device-width) / var(--ideal-viewport-width));
+  background-color: #3a643b2d;
+}
+.input_button button {
+  border: none;
+  height: 100%;
+  border-radius: 0 2vw 2vw 0;
+  background-color: #000000;
+  color: aliceblue;
+}
+.input_button input {
+  border: none;
+  height: 100%;
+  border-radius: 2vw 0 0 2vw;
+}
+@media (max-width: 600px) {
+  .footer {
+    height: calc(924 * var(--curr-device-width) / var(--ideal-viewport-width));
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+}
