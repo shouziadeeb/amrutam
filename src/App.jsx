@@ -24,7 +24,7 @@ function App() {
       <Stories />
       <AyurvedaExperts />
       <AmrutamApp />
-      {/* <Footer /> */}
+      <Footer />
     </>
   );
 }
